@@ -117,7 +117,7 @@ const eventData = {
       id: 10,
       title: "Artist Showcase",
       description:
-        "An exiciting showcase of enticing entertainment which you'll regret to miss. Its a secret, not one to dissapoint.",
+        "Welcoming India's Laughter Champion, Rajat Sood to NSUT for an unforgettable performance of comedy and entertainment. Get ready to laugh your heart out with one of India's most talented comedians!",
       location: "TBD",
       timings: "TBD",
       image: "/Images/Events/Artist.png",
