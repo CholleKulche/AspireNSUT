@@ -53,7 +53,7 @@ const eventData = {
     },
     {
       id: 5,
-      title: "MUSICAL PERFORMANCE",
+      title: "Music night",
       description:
         "An exciting musical showcase by the talented musicians of NSUT. A perfect blend of melodies and rhythms to set the tone for an unforgettable evening.",
       location: "Admin Block",
