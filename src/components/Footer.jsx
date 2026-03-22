@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <footer className="bg-[#1a1a1a] text-white py-12 mt-0 z-[2]">
       <h1 className="text-white w-full z-[2] font-bold tracking-wider items-center uppercase text-center text-6xl md:text-8xl pb-12">
-        Word to Sponsors
+        Word to our Sponsors
       </h1>
       <p
         style={{ fontFamily: '"Gill Sans", sans-serif' }}
