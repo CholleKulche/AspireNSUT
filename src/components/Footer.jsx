@@ -1,10 +1,58 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
+import Marquee from "react-fast-marquee";
 
 export default function Footer() {
   return (
     <footer className="bg-[#1a1a1a] text-white py-12 mt-0 z-[2]">
+      <h1 className="text-white w-full z-[2] font-bold tracking-wider items-center uppercase text-center text-6xl md:text-8xl pb-12">
+        Word to Sponsors
+      </h1>
+      <p
+        style={{ fontFamily: '"Gill Sans", sans-serif' }}
+        className="text-center max-w-4xl mx-auto mb-12 px-4 text-gray-300 text-xs md:text-md sm:text-lg"
+      >
+        We would like to thank our sponsors for supporting Aspire 2026, the
+        Annual Social Entrepreneurship Convention by Enactus NSUT. Their
+        generous contributions and partnership have played a crucial role in
+        making this event possible.
+      </p>
+      <p
+        style={{ fontFamily: '"Gill Sans", sans-serif' }}
+        className="text-center max-w-4xl mx-auto mb-12 px-4 text-gray-300 text-xs md:text-md sm:text-lg"
+      >
+        We would especially like to acknowledge and extend our sincere gratitude
+        to EaseMyTrip for their valuable support as a sponsor of Aspire 2026,
+        the Annual Social Entrepreneurship Convention by Enactus NSUT. Their
+        association with Aspire reflects a shared commitment to empowering young
+        innovators, fostering impactful ideas, and driving meaningful change.
+      </p>
+      <Marquee
+        autoFill
+        gradient={false}
+        speed={40}
+        className="w-full bg-white py-4 mb-8"
+      >
+        {[
+          "/Images/Sponsors/abani.jpeg",
+          "/Images/Sponsors/Emt.png",
+          "/Images/Sponsors/EZDine.jpeg",
+          "/Images/Sponsors/Nine.jpeg",
+          "/Images/Sponsors/TruScholar.jpeg",
+        ].map((src, i) => (
+          <div
+            key={i}
+            className="shrink-0 mx-4 flex items-center justify-center w-[100px] h-[70px] sm:w-[150px] sm:h-[85px] md:w-[180px] md:h-[100px] lg:w-[120px] lg:h-[120px]"
+          >
+            <img
+              src={src}
+              alt={`sponsor-${i + 1}`}
+              className="block max-w-full max-h-full object-contain"
+            />
+          </div>
+        ))}
+      </Marquee>
       <div className="max-w-7xl mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           <Link to="https://enactus.in" target="_blank">

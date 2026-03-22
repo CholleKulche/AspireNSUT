@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo } from "react";
+import React, { useMemo } from "react";
 
 export default function Timeline() {
   const events = useMemo(
@@ -91,7 +91,7 @@ export default function Timeline() {
     [],
   );
 
-  const [activeIndex, setActiveIndex] = useState(0);
+  /*const [activeIndex, setActiveIndex] = useState(0);
 
   useEffect(() => {
     const updateActiveIndex = () => {
@@ -111,7 +111,7 @@ export default function Timeline() {
     updateActiveIndex();
     const interval = setInterval(updateActiveIndex, 60000);
     return () => clearInterval(interval);
-  }, [events]);
+  }, [events]);*/
 
   return (
     <div
@@ -131,8 +131,8 @@ export default function Timeline() {
 
           <div className="flex flex-col gap-10">
             {events.map((event, index) => {
-              const isPast = index < activeIndex;
-              const isActive = index === activeIndex;
+              const isPast = true;
+              const isActive = false;
               const isLeft = index % 2 === 0;
 
               return (
@@ -222,8 +222,8 @@ export default function Timeline() {
             <div className="absolute left-[120px] right-[120px] top-1/2 h-[4px] -translate-y-1/2 bg-[#FFD700]" />
 
             {events.map((event, index) => {
-              const isPast = index < activeIndex;
-              const isActive = index === activeIndex;
+              const isPast = true;
+              const isActive = false;
               const isAbove = index % 2 === 1;
 
               const usableWidth = Math.max(events.length * 260, 1350) - 240;
