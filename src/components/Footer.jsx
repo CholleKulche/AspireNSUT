@@ -23,10 +23,10 @@ export default function Footer() {
         className="text-center max-w-4xl mx-auto mb-12 px-4 text-gray-300 text-xs md:text-md sm:text-lg"
       >
         We would especially like to acknowledge and extend our sincere gratitude
-        to EaseMyTrip for their valuable support as a sponsor of Aspire 2026,
-        the Annual Social Entrepreneurship Convention by Enactus NSUT. Their
-        association with Aspire reflects a shared commitment to empowering young
-        innovators, fostering impactful ideas, and driving meaningful change.
+        to EaseMyTrip for their valuable support as a sponsor of Aspire 2026.
+        Their association with Aspire reflects a shared commitment to empowering
+        young innovators, fostering impactful ideas, and driving meaningful
+        change.
       </p>
       <Marquee
         autoFill
